@@ -1,0 +1,19 @@
+create table user(id int NOT NULL AUTO_INCREMENT, name varchar(50), phone varchar(50), altphone varchar(50), street1 varchar(50), street2 varchar(50), city varchar(50), state varchar(50), country varchar(50), pincode varchar(50), mail varchar(50), cmail varchar(50), cphone varchar(50), prodname varchar(50), paid varchar(10), trackid varchar(50), PRIMARY KEY (id));
+
+
+
+
+create table shop(id int NOT NULL AUTO_INCREMENT, name varchar(100) NOT NULL,price varchar(50), category varchar(50), des varchar(100), mainurl varchar(200), nexturl varchar(200), youtube varchar(100),PRIMARY KEY (id) );
+
+
+
+create table imag(id int NOT NULL AUTO_INCREMENT,one varchar(100), two varchar(100),three varchar(100), PRIMARY KEY (id) );
+
+
+
+create table cmpny(id int NOT NULL AUTO_INCREMENT, arr int, name varchar(100) UNIQUE, PRIMARY KEY (id) );
+
+ALTER TABLE user
+        ADD delivery varchar(20);
+
+
